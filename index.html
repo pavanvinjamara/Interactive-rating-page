@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="index.css" />
+  <script src="index.js"></script>
+</head>
+<body>
+  
+<div class="container">
+  <!-- Rating state start -->
+  <section class="Ratingstart">
+  
+    <img src="images/icon-star.svg" alt="Star icon image" class="starIcon" >
+    <h1 class="header">How did we do?</h1>
+    <p class="message"> Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</p>
+  <ul>
+    <li><button class="rate-btn" id="Btn1" value="1" onclick="changeValue(value)">1</button></li>
+    <li><button class="rate-btn" id="Btn2" value="2" onclick="changeValue(value)">2</button></li>
+    <li><button class="rate-btn" id="Btn3" value="3" onclick="changeValue(value)">3</button></li>
+    <li><button class="rate-btn" id="Btn4" value="4" onclick="changeValue(value)">4</button></li>
+    <li><button class="rate-btn" id="Btn5" value="5" onclick="changeValue(value)">5</button></li>
+  </ul>
+
+  <button class="btn-submit" id="btn-sub">Submit</button>
+  
+  </section>
+
+  
+  <!-- Rating state end -->
+
+   <!-- Thank you state start -->
+
+  <section class="thankYou hidden">
+
+    <img src="./images/illustration-thank-you.svg" alt="Thank you" class="img-thankyou">
+
+    <p class="rated-msg">You selected <span id="rated"></span> out of 5</p>
+    
+    <h1 class="header2"> Thank you!</h1>
+   
+    <p class="msgthank">We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+      <button class="btn-again" id="btn-try">rate again</button>
+  </section>
+   <!-- Thank you state end -->
+</div>
+
+<!-- <script src="index.js"></script> -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Vinjamra Pavan Kumar</a>.
+  </div>
+  
+</body>
+</html>
